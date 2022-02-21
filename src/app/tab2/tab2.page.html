@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ข่าวสาร
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Latest News</ion-label>
+      <ion-button>See All</ion-button>
+    </ion-list-header>
+    <ion-item-sliding *ngFor="let n of newss">
+      <ion-item>
+        <ion-avatar slot="end">
+          <img [src]="n.Image">
+        </ion-avatar>
+        <ion-label>
+          <h2>New Omicron Case in NVC</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequatur laboriosam veritatis! Perferendis
+            neque, esse nulla voluptas dolore
+            deleniti ipsa ullam aut alias a repudiandae, harum necessitatibus veniam dolorum id.</p>
+        </ion-label>
+        <ion-item-options side="end">
+          <ion-item-option color="primary">
+            Favorite
+          </ion-item-option>
+          <ion-item-option color="danger">
+            Hide
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

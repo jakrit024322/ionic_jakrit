@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      หน้าหลัก
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let p of promotions">
+    <ion-card-header>
+      <ion-card-subtitle>{{p.subtitle}}</ion-card-subtitle>
+      <ion-card-title>{{p.title}}</ion-card-title>
+    </ion-card-header>
+    <img [src]="p.Image" alt="" style="height: 300px; width:300px;">
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nam officia illum ad unde sint? Molestiae minus, pariatur 
+      ullam suscipit omnis quaerat nam odit! Perferendis dolorem debitis aliquid quia est.
+      <ion-button expand="block" color="primary" shape="round">
+          View Detils
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
